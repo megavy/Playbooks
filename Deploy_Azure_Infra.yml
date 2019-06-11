@@ -52,10 +52,11 @@
       name: myVM
       vm_size: Standard_DS1_v2
       admin_username: azureuser
-      ssh_password_enabled: false
+      admin_password: REDhat@046
+      ssh_password_enabled: true
       ssh_public_keys:
         - path: /home/azureuser/.ssh/authorized_keys
-          key_data: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCoOhS0KA+kxUTi+6jKafhk06SSdDoWOGlgzShGywQr0BAjK8/E1ANq/DowSp0aeIK/kFf+ctlX6z1AlTY21linldGJ3/sQ/YdgLRN/qdZRxR3ZwUcE3Jp5vzpP8FsOxDz/oMbbay62JHwG+NovVOw5oc3aYTeCLbFar4azqRDKhQCo4gz5VxGZdRNjem/xGBolKhBtCVzHU5kLPWwYf2XBjOTxFRgu5m88l8JKsGm1qDDQPUB+NO28oTPAQmrCwnWy4H9uL6XgzkLLZDaVO8YIPxGwzPnL1QArR1FvCgBQXVl8mdiOMQkezmJq+9FMGiUKE2ZRzW9IN+tVFHmkDv9L root@devops.converge.local
+          key_data: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnK6OV5xFXLKtagAsp5amRfIw8M5KBHWob4jo1gzFft8Es4CKa86ydthM6GpeKKreA/5QDPd9Uz9iT98Gf3CdBsQUIynH6R6ZVCB9Agxi98WaURZkvmJEhligdMqGytnWMw2OYY1gKybgdTkxvYwnu2Y5XPqHi3keKvgIs/WcxFUeivvFyzEb2vrqKQhUHs99zE5pwWUuOx42VPy3rOJoFssA3T9lNsVDOCWCdn3eLhgqy4wqkbwAnYRDUzaDp7DjHhYZQ6B7uYw1CTZ7RK6L2xpnbM8lA1frcrXXKdtwawAkAcKUIimI1cd3amkomKKc7hH/ky+4TY8LLUr8TJr9Yw== rsa-key-20190611
       network_interfaces: myNIC
       image:
         offer: CentOS
