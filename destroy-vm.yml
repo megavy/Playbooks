@@ -1,0 +1,11 @@
+- name: Destroy Virtual Machine
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Destroy VM
+    azure_rm_virtualmachine:
+      resource_group: myResourceGroup
+      name: myVM
+      state: absent
+
+
